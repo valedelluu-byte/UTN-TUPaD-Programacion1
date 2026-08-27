@@ -1,6 +1,6 @@
 # Trabajo Práctico: Estructuras Repetitivas
 
-**Alumno/a:** Valentina
+**Alumno/a:** Valentina Aguilera
 **Materia:** Programación 1 - UTN  
 
 ## Descripción
