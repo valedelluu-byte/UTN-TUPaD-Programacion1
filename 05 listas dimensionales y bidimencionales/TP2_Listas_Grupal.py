@@ -25,13 +25,15 @@ for contador in range(cantidad_de_elementos):
 lista.reverse()
 print(lista)
 
-# Actividad 4: Escribe un programa que pida al usuario una lista de números y cuente cuántos de ellos son pares y cuántos son impares. 
+# Actividad 4: Escribe un programa que pida al usuario una lista de números y cuente cuántos de ellos son pares y cuántos son impares.
 # Pedir ingreso de datos
 entrada = input("Ingrese numeros enteros separados por espacios: ")
 numeros = [int(x) for x in entrada.split()]
+
 # Contar pares e impares
 pares = sum(1 for x in numeros if x % 2 == 0)
 impares = len(numeros) - pares
+
 # Mostrar resultados
 print("Cantidad de numeros pares:", pares)
 print("Cantidad de numeros impares:", impares)
@@ -41,19 +43,27 @@ print("Cantidad de numeros impares:", impares)
 entrada = input("Ingrese numeros separados por espacios: ")
 numeros = [float(x) for x in entrada.split()]
 factor = float(input("Ingrese el numero por el cual desea multiplicar: "))
+
 # Multiplicar cada elemento
 resultado = [x * factor for x in numeros]
+
 # Mostrar resultado
 print("Lista multiplicada:", resultado)
 
-# Actividad 6: Escribe un programa que permita al usuario ingresar una lista de números y elimine lo elementos duplicados.
-# Pedir ingreso de datos
+# Actividad 6: Escribe un programa que permita al usuario ingresar una lista de números y elimine los elementos duplicados.
+# Pedir ingreso de datos: En este caso, el programa pide una cantidad de numeros al usuario y los almacena en la lista
 entrada = input("Ingrese numeros separados por espacios: ")
-numeros = [float(x) for x in entrada.split()]
-# Convertir a conjunto para eliminar repetidos y reconvertir a lista
-sin_duplicados = list(set(numeros))
-# Mostrar resultado
-print("Lista sin duplicados:", sin_duplicados)
+
+#Hace una lista vacia 
+lista_original = [] #Inicializa una lista que esta vacia para guardar valores
+for x in entrada.split():
+    lista_original.append(float(x))
+
+# Guardamos directamente en el set, y seran elementos sin duplicado 
+sin_duplicados = set(lista_original)
+
+print("Elementos sin duplicados:", sin_duplicados)
+
 
 # Actividad 7: Escribe un programa que permita al usuario ingresar una lista de números y calcule el promedio de los elementos.
 # Pedimos al usuario que ingresse numeros separados por espacios
