@@ -72,8 +72,7 @@ def pedir_golosina():
         stock_actual = golosina_encontrada[2]
         
         if stock_actual <= 0:
-            print(f"Lo sentimos la golosina {denominacion} no se encuentra disponible, "
-                  f"seleccione otra golosina o ingresa salir si no desea otra golosina")
+          print(f"Lo sentimos la golosina {denominacion} no se encuentra disponible, seleccione otra golosina o ingresa salir si no desea otra golosina")
         else:
             # Descontar stock de la máquina
             golosina_encontrada[2] -= 1
