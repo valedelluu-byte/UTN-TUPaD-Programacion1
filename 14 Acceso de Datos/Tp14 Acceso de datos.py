@@ -150,7 +150,7 @@ if __name__ == '__main__':
     registrar_libro("Ficciones", 1944, id_autor2)
 
     # 3. Listar todos los libros registrados en consola
-    print("\n--- 📚 LISTADO DE LIBROS INICIAL ---")
+    print("\n--- LISTADO DE LIBROS INICIAL ---")
     libros = listar_libros()
     for libro in libros:
         print(libro)
@@ -162,7 +162,7 @@ if __name__ == '__main__':
         print(f"\n-> Actualizando el título del libro ID {id_libro_a_modificar}...")
         actualizar_titulo_libro(id_libro_a_modificar, nuevo_titulo)
 
-        print("\n--- 📚 LISTADO TRAS LA ACTUALIZACIÓN ---")
+        print("\n---  LISTADO TRAS LA ACTUALIZACIÓN ---")
         for libro in listar_libros():
             print(libro)
 
@@ -172,7 +172,7 @@ if __name__ == '__main__':
         print(f"\n-> Eliminando el libro con ID {id_libro_a_eliminar}...")
         eliminar_libro(id_libro_a_eliminar)
 
-        print("\n--- 📚 LISTADO TRAS LA ELIMINACIÓN ---")
+        print("\n--- LISTADO TRAS LA ELIMINACIÓN ---")
         for libro in listar_libros():
             print(libro)
 
